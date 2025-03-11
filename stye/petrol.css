@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+nav{
+    background-color: rgb(14, 164, 187);
+    padding: 10px;
+    border: 1px solid rgb(16, 47, 113);
+    height: 60px;
+}
+h1{
+    text-align: center;
+    background-color: rgb(5, 115, 152);
+}
+#Starting{
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    top: 330px;
+    left: 584px; 
+    z-index: 1;
+    
+}
+#Starting1{
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 500;
+    position: relative;
+    top: 840px;
+    left: 282px
+}
+input[type=date]{
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
+.non{
+    display: none;
+}
+label{
+    margin: 15px;
+    color: white;
+    font-size: 20px;
+}
+#printpdf{
+    padding: 10px;
+    background-color: rgb(0, 129, 39);
+    border-radius: 7px;
+    border: 1px solid rgba(185, 109, 109, 0);
+    cursor: pointer;
+    margin-left: 630px; 
+}
+#printpdf:hover{
+    background-color: #072e17;
+    color: white;
+}
+
+
+
+@media print {
+    *{
+        margin-left: 10px;
+        zoom: 1.05;
+    }
+    h1{
+        display: none;
+    }
+   #date{
+    display: none;
+   }
+   #date1{
+    display: none;
+   }
+   #printpdf{
+    display: none;
+   }
+   label{
+    display: none;
+   }
+   #Starting1{
+    top: 883px;  
+   }
+   #Starting{
+    top: 350px;   
+    left: 588px; 
+}
+    nav{
+        display: none;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    nav{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: -10px;
+        padding: 9px;
+    }
+    #printpdf{
+      position: relative; 
+      top: 10px;
+      right: 500px;
+      height: 30px;
+      width: 300px;
+
+    }
+    img{
+        height: 450px;
+        width: auto;
+        position: absolute;
+        left: 70px;
+        border: 2px solid black;
+        padding: 5px;
+        margin: 10px;
+        
+    }
+  }
+  /* @media only screen and (min-width: 600px) {
+    #printpdf{
+        position: relative; 
+        top: 8px;
+        right: 590px;
+        height: 30px;
+        width: 600px;
+        padding: 0;
+      }
+  } */
+
+
